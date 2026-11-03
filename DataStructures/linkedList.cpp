@@ -2,17 +2,16 @@
 
 
 
-stackNode* createNode(int data)
+ListNode* createNode(int data)
 {
-	stackNode* newNode = new stackNode;
-	newNode->data = data;
+	ListNode* newNode = new ListNode;
+	newNode->value = data;
 	newNode->next = nullptr;
 	return newNode;
 }
-stackNode* addNodeHead(stackNode* first, int data)
+ListNode* addNodeHead(ListNode* first,int data)
 {
-	stackNode* current = first;
-	stackNode* newNode = createNode(data);
+	ListNode* newNode = createNode(data);
 	if (first == nullptr)
 	{
 		return newNode;
@@ -21,17 +20,13 @@ stackNode* addNodeHead(stackNode* first, int data)
 	newNode->next = first;
 	return newNode;
 }
-stackNode* removeNodeHead(stackNode* first)
+ListNode* removeNodeHead(ListNode* first)
 {
 	if (first == nullptr)
 	{
 		return nullptr;
 	}
-	stackNode* newFirst = first->next;
+	ListNode* newFirst = first->next;
 	delete first;
 	return newFirst;
-}
-void push(stackNode* s, unsigned int element)
-{
-	s = addNodeHead(*s, element);
 }

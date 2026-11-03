@@ -10,8 +10,8 @@ typedef struct ListNode
 	struct ListNode* next;
 } ListNode;
 
-stackNode* createNode(int data);
-stackNode* addNodeHead(stackNode* first, int data);
-stackNode* removeNodeHead(stackNode* first);
+ListNode* createNode(int data);
+ListNode* addNodeHead(ListNode* first, int data);
+ListNode* removeNodeHead(ListNode* first);
 
 #endif // LINKEDLIST_H
