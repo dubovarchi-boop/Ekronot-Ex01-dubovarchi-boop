@@ -5,7 +5,6 @@
 
 /* a positive-integer value stack, with no size limit */
 
-struct ListNode;
 
 typedef struct Stack
 {

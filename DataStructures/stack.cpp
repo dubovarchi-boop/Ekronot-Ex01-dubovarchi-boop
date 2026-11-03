@@ -3,8 +3,7 @@
 // to the head of the linkedList that represents the stack
 void push(Stack* s, unsigned int element)
 {
-	ListNode* newNode = createNode(element);
-	addNodeHead(s->values, element);
+	s->values = addNodeHead(s->values, element);
 }
 //this function removes the top element from the stack and returns its value if the stack is empty it returns -1
 int pop(Stack* s)
