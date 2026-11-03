@@ -150,7 +150,7 @@
     <ClInclude Include="linkedList.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="stack.h" />
-    <ClInclude Include="utils.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

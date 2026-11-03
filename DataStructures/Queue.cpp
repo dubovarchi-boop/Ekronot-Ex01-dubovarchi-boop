@@ -1,6 +1,6 @@
 #include "Queue.h"
 
-
+//this function checks if the queue is full or not by comparing the capacity of the queue with its size
 bool isFull(Queue* s)
 {
 	if (s->capacity == s->size)
@@ -12,6 +12,8 @@ bool isFull(Queue* s)
 		return false;
 	}
 }
+//this function adds a new element to the end of the queue if the queue is not full it adds the new value to the array at 
+// the index of capacity and increases tyhe capacity by one
 void enqueue(Queue* q, unsigned int value)
 {
     if (isFull(q) == true)
@@ -22,6 +24,7 @@ void enqueue(Queue* q, unsigned int value)
     q->arr[q->capacity] = value;
     q->capacity++;
 }
+//this function checks if the queue is empty or not by checking if the capacity of the queue is zero
 bool isEmpty(Queue* s)
 {
 	if (s->capacity == 0)
@@ -30,6 +33,7 @@ bool isEmpty(Queue* s)
 	}
 	return false;
 }
+//this function removes the first element from the queue and returns its value if the queue is empty it returns -1
 int dequeue(Queue* q)
 {
 	if (isEmpty(q) == true)
@@ -44,6 +48,7 @@ int dequeue(Queue* q)
 	q->capacity--;
 	return value;
 }
+//this function cleans up the queue by deleting the array and setting the size and capacity to zero
 void cleanQueue(Queue* q)
 {
 	if (q->arr != nullptr)
@@ -54,6 +59,7 @@ void cleanQueue(Queue* q)
 	q->size = 0;
 	q->capacity = 0;
 }
+//this function initialize the queue by allocating memory for the array and setting the size and capacity to zero
 void initQueue(Queue* q, unsigned int size)
 {
 	q->arr = new int[size];
