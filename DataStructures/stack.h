@@ -7,7 +7,8 @@
 typedef struct stackNode
 {
 	int data;
-	struct stackNode* next;
+	ListNode* values;
+
 } stackNode;
 
 

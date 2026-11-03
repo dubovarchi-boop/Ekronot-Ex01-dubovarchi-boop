@@ -140,9 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="linkedList.cpp" />
+    <ClCompile Include="part1tester.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linkedList.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
